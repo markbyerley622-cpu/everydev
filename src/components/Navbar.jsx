@@ -95,16 +95,6 @@ function Navbar({ onConnectWallet }) {
                   {link.label}
                 </a>
               ))}
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false)
-                  onConnectWallet()
-                }}
-                className="w-full mt-3 px-6 py-3 bg-gradient-to-r from-accent-pink to-accent-violet
-                           text-white font-semibold rounded-xl text-base"
-              >
-                Connect Wallet
-              </button>
             </div>
           </div>
         )}
