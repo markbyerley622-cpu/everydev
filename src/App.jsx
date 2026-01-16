@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-deep-charcoal">
-      <Navbar onConnectWallet={() => openWalletModal()} />
+      <Navbar />
       <main>
         <Hero onConnectWallet={() => openWalletModal()} />
         <WhatIs />

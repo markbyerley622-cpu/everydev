@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function Navbar({ onConnectWallet }) {
+function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -48,22 +48,6 @@ function Navbar({ onConnectWallet }) {
                 {link.label}
               </a>
             ))}
-          </div>
-
-          {/* Connect Wallet Button - Desktop */}
-          <div className="hidden md:flex items-center gap-4">
-            <button
-              onClick={onConnectWallet}
-              className="flex items-center gap-2 px-4 lg:px-6 py-2 lg:py-3 bg-gradient-to-r from-accent-pink to-accent-violet
-                         text-white text-sm lg:text-base font-semibold rounded-xl hover:shadow-lg hover:shadow-accent-pink/30
-                         transition-all duration-300 transform hover:scale-105"
-            >
-              <svg className="w-4 h-4 lg:w-5 lg:h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 7H18V6C18 4.34 16.66 3 15 3H5C3.34 3 2 4.34 2 6V18C2 19.66 3.34 21 5 21H19C20.66 21 22 19.66 22 18V10C22 8.34 20.66 7 19 7ZM5 5H15C15.55 5 16 5.45 16 6V7H5C4.45 7 4 6.55 4 6C4 5.45 4.45 5 5 5ZM20 18C20 18.55 19.55 19 19 19H5C4.45 19 4 18.55 4 18V8.83C4.32 8.94 4.66 9 5 9H19C19.55 9 20 9.45 20 10V18ZM16 14C16 14.83 16.67 15.5 17.5 15.5C18.33 15.5 19 14.83 19 14C19 13.17 18.33 12.5 17.5 12.5C16.67 12.5 16 13.17 16 14Z" fill="currentColor"/>
-              </svg>
-              <span className="hidden sm:inline">Connect Wallet</span>
-              <span className="sm:hidden">Connect</span>
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
